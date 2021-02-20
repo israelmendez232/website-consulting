@@ -1,9 +1,0 @@
-{
-  "name": "website-consulting",
-  "version": "1.0.0",
-  "description": "Website for a consulting firm.",
-  "main": "index.js",
-  "repository": "https://github.com/israelmendez232/website-consulting.git",
-  "author": "israelmendez232 <israel.mendez232@gmail.com>",
-  "license": "MIT"
-}

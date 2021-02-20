@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import HeaderBase, { NavLinks, NavLink, PrimaryLink } from "../components/light.js";
+import HeaderBase, { NavLinks, NavLink } from "../components/light.js";
 import { SectionHeading } from "../components/Headings.js";
 import { SectionDescription } from "../components/Typography.js";
 import { PrimaryButton as PrimaryButtonBase } from "../components/Buttons.js";
@@ -54,20 +54,11 @@ export default ({
   const buttonRoundedCss = buttonRounded && tw`rounded-full`;
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="/#">About</NavLink>
-      <NavLink href="/#">Blog</NavLink>
-      <NavLink href="/#">Pricing</NavLink>
-      <NavLink href="/#">Contact Us</NavLink>
-      <NavLink href="/#">Testimonials</NavLink>
+      <NavLink href="/#">Sobre Nós</NavLink>
+      <NavLink href="/#">Serviços</NavLink>
+      <NavLink href="/#">Depoimentos</NavLink>
+      <NavLink href="/#">Contato</NavLink>
     </NavLinks>,
-    <NavLinks key={2}>
-      <NavLink href="/#" tw="lg:ml-12!">
-        Login
-      </NavLink>
-      <PrimaryLink css={buttonRoundedCss} href="/#">
-        Sign Up
-      </PrimaryLink>
-    </NavLinks>
   ];
   return (
     <>
