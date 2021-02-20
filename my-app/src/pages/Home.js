@@ -7,12 +7,9 @@ import Hero from "../components/TwoColumnWithFeaturesAndTestimonial.js";
 import Features from "../components/ThreeColWithSideImage.js";
 import MainFeature from "../components/TwoColWithTwoHorizontalFeaturesAndButton.js";
 import FeatureStats from "../components/ThreeColCenteredStatsPrimaryBackground.js";
-import Pricing from "../components/TwoPlansWithDurationSwitcher.js";
-import Blog from "../components/GridWithFeaturedPost.js";
-import Testimonial from "../components/TwoColumnWithImageAndRating.js";
-import FAQ from "../components/SingleCol.js";
+import Testimonial from "../components/ThreeColumnWithProfileImage.js";
 import GetStarted from "../components/GetStartedLight.js";
-import Footer from "../components/FiveColumnWithInputForm.js";
+import Footer from "../components/MiniCenteredFooter.js";
 
 const HighlightedText = tw.span`text-primary-500`
 
@@ -27,19 +24,7 @@ export default () => {
       <MainFeature
         heading={<>Cloud built by and for <HighlightedText>Professionals</HighlightedText></>}
       />
-      <Testimonial 
-        heading={<>Our Clients <HighlightedText>Love Us</HighlightedText></>}
-      />
-      <Pricing 
-        heading={<>Flexible <HighlightedText>Plans</HighlightedText></>}
-      />
-      <FAQ
-        heading={<>Any <HighlightedText>Questions ?</HighlightedText></>}
-      />
-      <Blog
-        subheading="Blog"
-        heading={<>We love <HighlightedText>Writing</HighlightedText></>}
-      />
+      <Testimonial />
       <GetStarted/>
       <Footer />
     </AnimationRevealPage>
