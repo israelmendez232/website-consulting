@@ -23,29 +23,29 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
 `;
 
 export default ({
-  subheading = "Testimonials",
-  heading = "Customer's Review",
+  subheading = "Depoimentos",
+  heading = "Visão dos Clientes",
   testimonials = [
     {
       imageSrc:
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
       quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "Charlotte Hale"
+        "Eles me ajudaram bastante no começo, a configurar o Google Analytics, otimizar a mídia de performance. Hoje, tenho certeza que temos uma empresa bem data-driven.",
+      customerName: "Rossana Amaro Paiva"
     },
     {
       imageSrc:
         "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
       quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "Adam Cuppy"
+        "A consultoria trouxe uma nova visão para minha marca de roupa, ajudando a aumentar a receita em 245% em 9 meses. Tudo com base em análises de dados que eles nos ajudaram a montar.",
+      customerName: "Luan Bentes Paixão"
     },
     {
       imageSrc:
         "https://images.unsplash.com/photo-1580852300654-03c803a14e24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4.25&w=512&h=512&q=80",
       quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "Steven Marcetti"
+        "Profissionais, íntegros e focados em resultados. É como eu interpreto a Mendes Consultoria desde o início da nossa relação.",
+      customerName: "Enoque Frias Ferraço"
     }
   ]
 }) => {

@@ -2,10 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import {Container as ContainerBase } from "../components/Layouts.js"
-import { ReactComponent as FacebookIcon } from "../images/facebook-icon.svg";
-import { ReactComponent as TwitterIcon } from "../images/twitter-icon.svg";
-import { ReactComponent as YoutubeIcon } from "../images/youtube-icon.svg";
-
+import { ReactComponent as LinkedinIcon } from "../images/linkedin-icon.svg";
 
 const Container = tw(ContainerBase)`bg-gray-900 text-gray-100 -mx-8 -mb-8`
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -36,21 +33,15 @@ export default () => {
             <LogoText>Mendes Consulting</LogoText>
           </LogoContainer>
           <LinksContainer>
-            <Link href="#">Home</Link>
-            <Link href="#">About</Link>
-            <Link href="#">Contact Us</Link>
-            <Link href="#">Blog</Link>
-            <Link href="#">Reviews</Link>
+            <Link href="/#">Home</Link>
+            <Link href="/#">Sobre Nós</Link>
+            <Link href="/#services">Serviços</Link>
+            <Link href="/#testimonials">Depoimentos</Link>
+            <Link href="/#contact">Contato</Link>
           </LinksContainer>
           <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
-              <FacebookIcon />
-            </SocialLink>
-            <SocialLink href="https://twitter.com">
-              <TwitterIcon />
-            </SocialLink>
-            <SocialLink href="https://youtube.com">
-              <YoutubeIcon />
+            <SocialLink href="https://www.linkedin.com/company/mendes-consulting/">
+              <LinkedinIcon />
             </SocialLink>
           </SocialLinksContainer>
           <CopyrightText>
