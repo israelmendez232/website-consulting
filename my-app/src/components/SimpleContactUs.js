@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
+import emailjs from 'emailjs-com';
+
 import {ReactComponent as SvgDotPatternIcon} from "../images/dot-pattern.svg"
 
 const Container = tw.div`relative`;
@@ -35,13 +37,24 @@ const SubmitButton = tw.button`w-full sm:w-32 mt-6 py-3 bg-gray-100 text-primary
 const SvgDotPattern1 = tw(SvgDotPatternIcon)`absolute bottom-0 right-0 transform translate-y-1/2 translate-x-1/2 -z-10 opacity-50 text-primary-500 fill-current w-24`
 
 export default () => {
+    function sendEmail(exception) {
+        exception.preventDefault();
+  
+        emailjs.sendForm('{process.env.REACT_APP_EMAILJS_SERVICE}', '{process.env.REACT_APP_EMAILJS_TEMPLATEID}', exception.target, '{process.env.REACT_APP_EMAILJS_USERID}')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+    }
+
   return (
     <Container>
       <Content>
         <FormContainer>
           <div tw="mx-auto max-w-4xl">
             <h2>Entre em Contato</h2>
-            <form action="#">
+            <form action="#" onSubmit={sendEmail}>
               <TwoColumn>
                 <Column>
                   <InputContainer>

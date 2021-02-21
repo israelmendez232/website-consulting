@@ -6,7 +6,7 @@ import Hero from "../components/TwoColumnWithFeaturesAndTestimonial.js";
 import Features from "../components/ThreeColWithSideImage.js";
 import FeatureStats from "../components/ThreeColCenteredStatsPrimaryBackground.js";
 import Testimonial from "../components/ThreeColumnWithProfileImage.js";
-import Contact from "../components/GetStartedLight.js";
+import Contact from "../components/SimpleContactUs.js";
 import Footer from "../components/MiniCenteredFooter.js";
 
 export default () => {
