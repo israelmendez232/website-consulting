@@ -68,14 +68,34 @@ export default ({ cards = null, heading = "Serviços", subheading = "Serviços",
   const defaultCards = [
     {
       imageSrc: ShieldIconImage,
-      title: "Secure",
-      description: "We strictly only deal with vendors that provide top notch security."
+      title: "Segurança",
+      description: "Todas as informações compartilhadas são confidenciais e guardadas para você compatilhar o necessário."
     },
-    { imageSrc: SupportIconImage, title: "24/7 Support" },
-    { imageSrc: CustomizeIconImage, title: "Customizable" },
-    { imageSrc: ReliableIconImage, title: "Reliable" },
-    { imageSrc: FastIconImage, title: "Fast" },
-    { imageSrc: SimpleIconImage, title: "Easy" }
+    {
+        imageSrc: SupportIconImage,
+        title: "Segurança",
+        description: "24/7 Support"
+      },
+    {
+        imageSrc: CustomizeIconImage,
+        title: "Segurança",
+        description: "Customizable"
+      },
+    {
+        imageSrc: ReliableIconImage,
+        title: "Segurança",
+        description: "Reliable"
+      },
+    {
+        imageSrc: FastIconImage,
+        title: "Segurança",
+        description: "Fast"
+      },
+    {
+        imageSrc: SimpleIconImage,
+        title: "Segurança",
+        description: "Easy."
+      }
   ];
 
   if (!cards) cards = defaultCards;
@@ -96,7 +116,7 @@ export default ({ cards = null, heading = "Serviços", subheading = "Serviços",
               <span className="textContainer">
                 <span className="title">{card.title || "Fully Secure"}</span>
                 <p className="description">
-                  {card.description || "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud."}
+                  {card.description}
                 </p>
               </span>
             </Card>

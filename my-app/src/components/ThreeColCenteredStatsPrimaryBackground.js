@@ -18,20 +18,20 @@ const StatValue = tw.div`text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-black
 
 export default ({
   subheading = "",
-  heading = "Over 9000 Projects Completed",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  heading = "Nossos Números",
+  description = "Com um pouco mais de 2 anos de idade, a Mendes Consulting trouxe os seguintes resultados:",
   stats = [
     {
-      key: "Clients",
-      value: "2500+",
+      key: "Clientes",
+      value: "25+",
     },
     {
-      key: "Revenue",
-      value: "$100M+",
+      key: "Projetos",
+      value: "80+",
     },
     {
-      key: "Employees",
-      value: "150+",
+      key: "Horas",
+      value: "+500",
     },
   ]
 }) => {
