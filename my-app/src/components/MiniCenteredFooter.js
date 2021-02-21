@@ -34,7 +34,6 @@ export default () => {
           </LogoContainer>
           <LinksContainer>
             <Link href="/#">Home</Link>
-            <Link href="/#">Sobre Nós</Link>
             <Link href="/#services">Serviços</Link>
             <Link href="/#testimonials">Depoimentos</Link>
             <Link href="/#contact">Contato</Link>

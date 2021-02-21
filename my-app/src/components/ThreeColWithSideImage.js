@@ -8,12 +8,12 @@ import { SectionHeading, Subheading as SubheadingBase } from "../components/Head
 import { SectionDescription } from "../components/Typography.js";
 import defaultCardImage from "../images/shield-icon.svg";
 import { ReactComponent as SvgDecoratorBlob3 } from "../images/svg-decorator-blob-3.svg";
-import SupportIconImage from "../images/support-icon.svg";
 import ShieldIconImage from "../images/shield-icon.svg";
-import CustomizeIconImage from "../images/customize-icon.svg";
 import FastIconImage from "../images/fast-icon.svg";
-import ReliableIconImage from "../images/reliable-icon.svg";
-import SimpleIconImage from "../images/simple-icon.svg";
+import Lock from "../images/padlock.svg";
+import Chart from "../images/line-chart.svg";
+import Science from "../images/magnifying-glass.svg";
+import Engineering from "../images/server-storage.svg";
 
 const Container = tw.div`relative`;
 
@@ -57,44 +57,36 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
 `;
 
 export default ({ cards = null, heading = "Serviços", subheading = "Serviços", description = "Saiba como podemos ajudar a resolver os seus problemas de negócios com dados." }) => {
-  /*
-   * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
-   *  1) imageSrc - the image shown at the top of the card
-   *  2) title - the title of the card
-   *  3) description - the description of the card
-   *  If a key for a particular card is not provided, a default value is used
-   */
-
   const defaultCards = [
     {
-      imageSrc: ShieldIconImage,
-      title: "Segurança",
-      description: "Todas as informações compartilhadas são confidenciais e guardadas para você compatilhar o necessário."
+        imageSrc: Chart,
+        title: "Análise de Dados",
+        description: "Fazemos análise e damos suporte para que as informações guiem sua estratégia."
+      },
+    {
+        imageSrc: Engineering,
+        title: "Engenharia",
+        description: "Auxiliamos a estrutura e infra de informações, incentivamos boas práticas para seu código ser escalável."
+      },
+    {
+        imageSrc: Science,
+        title: "Ciência de Dados",
+        description: "Realizamos análises estatísticas e matemáticas mais complexas para automatizar tomada de decisões de maneira mais inteligente."
+      },
+    {
+        imageSrc: ShieldIconImage,
+        title: "Segurança",
+        description: "Todas as informações compartilhadas são confidenciais e guardadas para você compatilhar o necessário."
     },
     {
-        imageSrc: SupportIconImage,
-        title: "Segurança",
-        description: "24/7 Support"
-      },
-    {
-        imageSrc: CustomizeIconImage,
-        title: "Segurança",
-        description: "Customizable"
-      },
-    {
-        imageSrc: ReliableIconImage,
-        title: "Segurança",
-        description: "Reliable"
+        imageSrc: Lock,
+        title: "LGPD/GDPR",
+        description: "Orientamos você para adequar sua empresa a Lei Geral de Proteção de Dados e/ou Regulamento Geral sobre a Proteção de Dados Europeu (General Data Protection Regulation)."
       },
     {
         imageSrc: FastIconImage,
-        title: "Segurança",
-        description: "Fast"
-      },
-    {
-        imageSrc: SimpleIconImage,
-        title: "Segurança",
-        description: "Easy."
+        title: "Velocidade",
+        description: "Nossas entregas são priorizadas para serem rápidas e com qualidade."
       }
   ];
 
